@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Oxanium } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const oxanium = Oxanium({
   variable: "--font-oxanium",
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${oxanium.variable} antialiased`}
       >
+        <Header/>
         {children}
       </body>
     </html>

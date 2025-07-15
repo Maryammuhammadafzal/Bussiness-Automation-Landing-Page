@@ -129,3 +129,14 @@
     @apply bg-gradient-to-l from-[#A222B8] to-[#1F7FBE] font-extrabold tracking-tighter text-transparent bg-clip-text pb-2 pr-2
   }
 }
+
+.nav-list:hover {
+ border-image: linear-gradient( to left , #A222B8 , #1F7FBE) 1;
+ border-width: 1;
+
+}
+.nav-list {
+ border-image: linear-gradient( to left , #010101 , #0a0a0a) 1;
+ border-width: 1;
+
+}
