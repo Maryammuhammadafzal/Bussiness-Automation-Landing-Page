@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 const oxanium = Oxanium({
   variable: "--font-oxanium",
   subsets: ["latin"],
+  weight: ['200' , '300' ,'400' , '500' ,'600' , '700' , '800'],
+  display: 'swap'
 });
 
 export const metadata: Metadata = {
