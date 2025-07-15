@@ -130,6 +130,10 @@
   }
 }
 
+@theme {
+  --breakpoint-xs: 30rem;
+}
+
 .nav-list:hover {
  border-image: linear-gradient( to left , #A222B8 , #1F7FBE) 1;
  border-width: 1;

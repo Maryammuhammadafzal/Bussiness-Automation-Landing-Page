@@ -5,11 +5,11 @@ const HeroPage = () => {
     return (
         <div className='w-full h-screen flex justify-center items-center'>
             <div className='w-full h-full flex justify-center items-center bg-cover bg-no-repeat bg-center' style={{ backgroundImage: `url('/images/hero-bg.png')` }}>
-                <div className='w-full h-full flex md:flex-row flex-col lg:p-8 md:p-5 mt-30 justify-between items-center gap-6'>
-                    <h1 className='text-8xl w-1/2 font-semibold leading-22'>
+                <div className='w-full h-full flex md:flex-row flex-col lg:p-8 md:p-5 mt-30 md:justify-between justify-center items-center gap-6'>
+                    <h1 className='xl:text-8xl lg:text-7xl sm:text-6xl text-5xl max-[380px]:text-4xl md:w-1/2 sm:w-[60%] xs:w-[70%] w-[85%] font-semibold xl:leading-22 lg:leading-20 md:leading-16'>
                         Welcome to AutomateEdge Solutions
                     </h1>
-                    <div className='w-1/2 flex justify-end'>
+                    <div className='md:w-1/2 sm:w-[60%] xs:w-[70%] w-[85%] flex justify-end'>
                         <Image src='/images/hero-image.png' alt='hero-image' width={630} height={420} />
                     </div>
                 </div>
