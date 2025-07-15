@@ -1,10 +1,10 @@
 'use client'
-import { MenuIcon } from 'lucide-react'
+import { MenuIcon, X } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
 const Header = () => {
-    const [isOpen , setIsOpen]= useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const nav_data = [
         {
             name: 'Home',
@@ -43,8 +43,21 @@ const Header = () => {
                             ))
                         }
                     </ul>
-                    <MenuIcon size={32} onClick={()=> setIsOpen(!isOpen)} />
-                        <div className='flex w-50 h-screen bg-primary'></div>
+                    <MenuIcon size={32} onClick={() => setIsOpen(!isOpen)} className='sm:hidden block' />
+                    <nav className={`${isOpen ? 'translate-x-0 w-50 flex' : 'translate-x-50 w-0 hidden'} sm:hidden h-screen bg-black duration-700 fixed right-0 top-0`}>
+                        <ul className='w-full h-full py-6 px-3 flex flex-col gap-6'>
+                            <li className='w-full flex justify-end items-center p-3'>
+                                <X onClick={()=> setIsOpen(false)} size={32} />
+                            </li>
+                            {
+                                nav_data.map(({ name, link }, index) => (
+                                    <li key={index} className='nav-list py-1 px-3'>
+                                        <Link href={link}>{name}</Link>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </nav>
                 </nav>
             </div>
         </div>
