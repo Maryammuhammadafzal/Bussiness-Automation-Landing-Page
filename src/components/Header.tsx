@@ -38,7 +38,7 @@ const Header = () => {
     console.log(offset);
     
     return (
-        <div className={`${offset > 0 ? 'bg-black' : 'bg-transparent' } w-full h-[100px] flex justify-center items-center fixed top-0 left-0`}>
+        <div className={`${offset > 0 ? 'bg-black' : 'bg-transparent' } w-full h-[100px] flex justify-center items-center fixed z-50 top-0 left-0`}>
             <div className='w-full h-full flex justify-between items-center gap-4 lg:px-8 px-5'>
                 <Link href='/' className='w-auto h-auto'>
                     <p className='logo text-[40px] font-semibold px-2'>LOGO</p>

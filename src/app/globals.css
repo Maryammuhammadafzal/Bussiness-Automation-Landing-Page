@@ -122,7 +122,7 @@
 
 @layer utilities {
   .gradient {
-  @apply  bg-gradient-to-b from-[#A222B8] to-[#1F7FBE]
+  @apply  bg-gradient-to-t from-[#A222B8] to-[#1F7FBE]
   }
 
   .gradient-title {

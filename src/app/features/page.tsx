@@ -31,13 +31,14 @@ const FeaturesPage = () => {
             <Heading title='Real-World Impact' />
             <div className='flex flex-col gap-6 w-full h-auto'>
                 {choose_data.map(({ title, description }, index) => (
-                    <div key={index} className=' h-auto py-10 sm:px-4 px-2 flex flex-col  gap-4 '>
-                        <h3 className='gradient-title w-fit font-semibold xl:text-[40px] lg:text-4xl md:text-3xl sm:text-2xl text-xl'>
+                    <div key={index} className='lg:w-[70%] md:w-[85%] w-[97%] relative h-auto py-10  group sm:px-4 px-2 flex flex-col border-b border-secondary  gap-4 '>
+                        <h3 className='gradient-title w-fit font-semibold xl:text-[40px] lg:text-4xl sm:text-3xl text-2xl max-md:max-w-sm'>
                             {title}
                         </h3>
-                        <p className='sm:text-base text-sm'>
+                        <p className='sm:text-base text-sm lg:max-w-2xl md:max-w-xl max-w-sm'>
                             {`${description}`}
                         </p>
+                        <div className='absolute top-0 md:left-0 right-0 md:w-[265px] md:h-[295px] w-[200px] h-[200px] gradient md:-translate-x-100 transition-transform duration-700 rotate-6 md:group-hover:translate-x-[800px]'></div>
                     </div>
                 ))}
             </div>
