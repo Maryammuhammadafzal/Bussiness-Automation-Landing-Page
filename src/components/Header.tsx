@@ -20,19 +20,19 @@ const Header = () => {
         },
         {
             name: 'About',
-            link: '/'
+            link: '/choose'
         },
         {
             name: 'Expertise',
-            link: '/'
+            link: '/expertise'
         },
         {
             name: 'Projects',
-            link: '/'
+            link: '/features'
         },
         {
             name: 'Contact Us',
-            link: '/'
+            link: '/contact'
         },
     ];
     console.log(offset);

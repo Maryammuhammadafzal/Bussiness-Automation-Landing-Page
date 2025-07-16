@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${oxanium.variable} antialiased`}
+        className={`${oxanium.variable} antialiased overflow-x-hidden w-full h-auto`}
       >
         <Header/>
         {children}

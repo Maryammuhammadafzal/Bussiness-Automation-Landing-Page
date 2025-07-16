@@ -41,7 +41,7 @@ const FeaturesPage = () => {
 
     ]
     return (
-        <div className='w-full h-auto flex md:py-20 py-10 flex-col md:gap-10 sm:gap-8 xs:gap-5 gap-2 sm:px-8 px-4'>
+        <div className='w-full h-auto lg:mt-10 flex md:py-20 py-10 flex-col md:gap-10 sm:gap-8 xs:gap-5 gap-2 sm:px-8 px-4'>
             <Heading title='Real-World Impact' />
             <div className='flex flex-col gap-6 w-full h-auto'>
                 {choose_data.map(({ title, description }, index) => (

@@ -8,7 +8,7 @@ import React from "react";
 
 const ContactPage = () => {
     return (
-        <div className="px-8 md:py-20 sm:py-14 py-7 w-full h-auto flex md:gap-16 sm:gap-10 gap-6 flex-col relative">
+        <div className="px-8 lg:mt-10 md:py-20 overflow-x-hidden sm:py-14 py-7 w-full h-auto flex md:gap-16 sm:gap-10 gap-6 flex-col relative">
              <div className="vector absolute w-[400px] h-[540px] top-0 -right-50">
                 <Vector/>
             </div>

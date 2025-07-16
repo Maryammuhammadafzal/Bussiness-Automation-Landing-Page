@@ -24,7 +24,7 @@ const ChoosePage = () => {
 
   ]
   return (
-    <div className='w-full h-auto flex md:py-20 py-10 flex-col md:gap-10 sm:gap-8 xs:gap-5 gap-2 sm:px-8 px-4'>
+    <div className='w-full h-auto flex mt-10 md:py-20 py-10 flex-col md:gap-10 sm:gap-8 xs:gap-5 gap-2 sm:px-8 px-4'>
       <Heading title='Why Choose Us?' />
       <div className='grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-6 justify-evenly w-full h-auto'>
         {choose_data.map(({ title, description }, index) => (
