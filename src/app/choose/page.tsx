@@ -1,5 +1,6 @@
 
 import Heading from '@/components/Heading'
+import Vector from '@/components/Vector'
 import React from 'react'
 
 const ChoosePage = () => {
@@ -27,13 +28,19 @@ const ChoosePage = () => {
       <Heading title='Why Choose Us?' />
       <div className='grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-6 justify-evenly w-full h-auto'>
         {choose_data.map(({ title, description }, index) => (
-          <div key={index} className=' h-auto py-10 text-center sm:px-4 px-2 flex flex-col justify-center items-center gap-4 border-image'>
-            <h3 className='font-semibold sm:text-2xl text-xl'>
-              {title}
-            </h3>
-            <p className='sm:text-base text-sm'>
-              {`${description}`}
-            </p>
+          <div className='w-auto h-auto relative'>
+
+            <div key={index} className='min-h-[220px] h-auto bg-primary z-20 py-10 text-center sm:px-4 px-2 flex flex-col justify-center items-center gap-4 border-image'>
+              <h3 className='font-semibold sm:text-2xl text-xl'>
+                {title}
+              </h3>
+              <p className='sm:text-base text-sm'>
+                {`${description}`}
+              </p>
+            </div>
+            <div className="vector -z-10 absolute w-[250px] h-[300px] -top-20 -left-20">
+              <Vector />
+            </div>
           </div>
         ))}
       </div>

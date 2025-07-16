@@ -1,9 +1,13 @@
 import Heading from '@/components/Heading'
+import Vector from '@/components/Vector'
 import React from 'react'
 
 const ExpertisePage = () => {
     return (
-        <div className='w-full h-auto flex md:py-20 py-10 flex-col md:gap-10 sm:gap-8 xs:gap-5 gap-2 sm:px-8 px-4'>
+        <div className='w-full h-auto flex md:py-20 py-10 flex-col md:gap-10 relative sm:gap-8 xs:gap-5 gap-2 sm:px-8 px-4'>
+             <div className="vector absolute w-[400px] h-[540px] -top-20 -right-50 ">
+                <Vector/>
+            </div>
             <Heading title='Our Expertise' />
             <div className='flex xs:flex-row flex-col w-full h-auto'>
                 <div className='xs:w-1/2 w-full h-auto xs:border-r border-secondary'>

@@ -3,11 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import Vector from "@/components/Vector";
 import React from "react";
 
 const ContactPage = () => {
     return (
-        <div className="px-8 md:py-20 sm:py-14 py-7 w-full h-auto flex md:gap-16 sm:gap-10 gap-6 flex-col ">
+        <div className="px-8 md:py-20 sm:py-14 py-7 w-full h-auto flex md:gap-16 sm:gap-10 gap-6 flex-col relative">
+             <div className="vector absolute w-[400px] h-[540px] top-0 -right-50">
+                <Vector/>
+            </div>
             <Heading title="Let’s Start Planning" />
             <div className=" h-auto flex flex-col gap-3 w-full ">
                 <h3 className='gradient-title w-fit font-semibold xl:text-[40px] lg:text-4xl sm:text-3xl text-2xl max-md:max-w-sm max-sm:max-w-[300px]'>
