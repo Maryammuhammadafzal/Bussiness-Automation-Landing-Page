@@ -5,6 +5,7 @@ import ExpertisePage from "./expertise/page";
 import ChoosePage from "./choose/page";
 import FeaturesPage from "./features/page";
 import StoriesPage from "./stories/page";
+import ContactPage from "./contact/page";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
    <ChoosePage/>
    <FeaturesPage/>
    <StoriesPage/>
+   <ContactPage/>
     </div>
   );
 }
