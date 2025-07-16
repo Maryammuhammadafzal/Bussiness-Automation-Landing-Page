@@ -2,7 +2,7 @@
 import Heading from '@/components/Heading'
 import React from 'react'
 
-const ChoosePage = () => {
+const FeaturesPage = () => {
   const choose_data = [
     {
       title: 'Industry Experts',
@@ -24,11 +24,11 @@ const ChoosePage = () => {
   ]
   return (
     <div className='w-full h-auto flex md:py-20 py-10 flex-col md:gap-10 sm:gap-8 xs:gap-5 gap-2 sm:px-8 px-4'>
-      <Heading title='Why Choose Us?' />
-      <div className='flex flex-col gap-6 w-full h-auto'>
+      <Heading title='Real-World Impact' />
+      <div className='grid lg:grid-cols-4 xs:grid-cols-2 grid-cols-1 gap-6 justify-evenly w-full h-auto'>
         {choose_data.map(({ title, description }, index) => (
-          <div key={index} className=' h-auto py-10  sm:px-4 px-2 flex flex-col gap-4 '>
-            <h3 className='font-semibold sm:text-2xl text-xl gradient-title'>
+          <div key={index} className=' h-auto py-10 text-center sm:px-4 px-2 flex flex-col justify-center items-center gap-4 border-image'>
+            <h3 className='font-semibold sm:text-2xl text-xl'>
               {title}
             </h3>
             <p className='sm:text-base text-sm'>
@@ -41,4 +41,4 @@ const ChoosePage = () => {
   )
 }
 
-export default ChoosePage
+export default FeaturesPage
