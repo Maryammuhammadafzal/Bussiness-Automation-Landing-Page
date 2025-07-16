@@ -52,7 +52,7 @@ const FeaturesPage = () => {
                         <p className='sm:text-base text-sm lg:max-w-2xl md:max-w-xl sm:max-w-sm max-w-[300px] '>
                             {`${description}`}
                         </p>
-                        <div data-aos={isMobile? 'fade-up' : undefined} className='absolute md:top-0 top-3 md:left-0 right-0 md:w-[265px] md:h-[295px] sm:w-[200px] sm:h-[200px] w-[170px] h-[170px] gradient md:-translate-x-100 transition-transform duration-700 rotate-6 md:group-hover:translate-x-[800px]'></div>
+                        <div data-aos={isMobile? 'fade-down' : undefined} className='md:absolute max-md:m-5 md:top-0 top-3 md:left-0 right-0 md:w-[265px] md:h-[295px] sm:w-[200px] sm:h-[200px] w-[170px] h-[170px] gradient md:-translate-x-100 transition-transform duration-700 rotate-6 md:group-hover:translate-x-[800px]'></div>
                     </div>
                 ))}
             </div>
