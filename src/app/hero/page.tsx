@@ -4,7 +4,7 @@ import React from 'react'
 
 const HeroPage = () => {
     return (
-        <div className='w-full xl:h-screen lg:h-[90vh] md:h-[70vh] sm:h-[60vh] h-[50vh] flex relative justify-center items-center'>
+        <div className='w-full h-screen flex relative justify-center items-center'>
             <div className="vector absolute w-[400px] -rotate-45 h-[540px] -top-20 -left-20">
                 <Vector/>
             </div>
